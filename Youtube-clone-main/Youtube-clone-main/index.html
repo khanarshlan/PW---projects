@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT clone</title>
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body class="bg-[#000] box-border">
+    <main>
+        <header class="text-white text-[0.8vw]">
+
+            <nav class="flex items-center justify-between font-thin px-[1vw] py-[0.5vw] select-none bg-[#212121] border-[0.01vw] border-[#626262]">
+                <div class="flex items-center gap-[1vw] text-[1vw]">
+                    <i class="ri-menu-line cursor-pointer"></i>
+                    <img class="cursor-pointer w-[5vw]" src="./navigation assets/logo.png" alt="logo">
+                </div>
+                <form action="#" class="flex items-center py-[0.5vw]">
+                    <input class="bg-[#000] pr-[20vw] py-[0.3vw] pl-[1vw] rounded-l-[1vw] border-[0.1vw] border-[#303030] focus:border-sky-700 focus:outline-none text-[#ccc] " type="text" placeholder="Search" required>
+                    <button class="bg-[#303030] px-[1vw] py-[0.35vw] rounded-r-[1vw]"><i class="ri-search-line "></i></button>
+                    <i class="ri-mic-fill bg-[#303030] mx-[0.5vw] px-[0.7vw] py-[0.4vw] rounded-[5vw] cursor-pointer"></i>
+                </form>
+                <div class="flex items-center gap-[1.5vw] text-[1.2vw] mr-[1vw]">
+                    <i class="ri-live-line cursor-pointer"></i>
+                    <i class="ri-notification-2-line cursor-pointer"></i>
+                    <img class="rounded-[5vw] cursor-pointer w-[2vw]" src="./navigation assets/User-Avatar.png" alt="user-profile">
+                </div>
+            </nav>
+
+            <div class="flex">
+                <nav class="w-[12vw] bg-[#212121] ">
+                    <div class="">
+                        <ul>
+                            <li class="flex items-center gap-[1vw] px-[1.2vw] py-[0.5vw]"><img class="cursor-pointer w-[0.8vw]" src="./navigation assets/home.png" alt="home"><a href="#">Home</a></li>
+                            <li class="flex items-center gap-[1vw] px-[1vw] py-[0.5vw]"><img class="cursor-pointer w-[1.2vw]" src="./navigation assets/explore.png" alt="Explore"><a href="#">Explore</a></li>
+                            <li class="flex items-center gap-[1vw] px-[1vw] py-[0.5vw] pb-[1vw]"><img class="cursor-pointer w-[1.2vw]" src="./navigation assets/subscriptions.png" alt="subscriptions"><a href="#">Subscriptions</a></li>
+                            <hr class="border-[#656565]">
+                            <li class="flex items-center gap-[1vw] px-[1vw] py-[0.5vw] pt-[1vw]"><img class="cursor-pointer w-[1.2vw]" src="./navigation assets/library.png" alt="library"><a href="#">Library</a></li>
+                            <li class="flex items-center gap-[1vw] px-[1vw] py-[0.5vw]"><img class="cursor-pointer w-[1.2vw]" src="./navigation assets/history.png" alt="history"><a href="#">History</a></li>
+                            <li class="flex items-center gap-[1vw] px-[1vw] py-[0.5vw]"><img class="cursor-pointer w-[1.2vw]" src="./navigation assets/yourVideos.png" alt="yourVideos"><a href="#">Your Videos</a></li>
+                            <li class="flex items-center gap-[1vw] px-[1vw] py-[0.5vw]"><img class="cursor-pointer w-[1vw]" src="./navigation assets/watchg.png" alt="watch"><a href="#">Watch Later</a></li>
+                            <li class="flex items-center gap-[1vw] px-[1vw] py-[0.5vw]"><img class="cursor-pointer w-[1.2vw]" src="./navigation assets/liked.png" alt="liked"><a href="#">Liked Videos</a></li>
+                            <li class="flex items-center gap-[1vw] px-[1vw] py-[0.5vw] pb-[1vw]"><img class="cursor-pointer w-[1.2vw]" src="./navigation assets/Icon.png" alt="arrow"><a href="#">Show More</a></li>
+                        </ul>
+                    </div>
+                    <hr class="border-[#656565]">
+                    <section class="pt-[1vw]">
+                        <div>
+                            <h2 class="text-[#ccc] px-[1.2vw] py-[0.5vw]">SUBSCRIPTION </h2>
+                            <ul>
+                                <li class="flex items-center gap-[1vw] px-[1.2vw] py-[0.5vw]"><img class="w-[1.3vw] rounded-[5vw] cursor-pointer" src="./navigation assets/User-Avatar.png" alt="Avatar"><a href="#">Hello Gamer</a></li>
+                                <li class="flex items-center gap-[1vw] px-[1.2vw] py-[0.5vw]"><img class="w-[1.3vw] rounded-[5vw] cursor-pointer" src="./navigation assets/User-Avatar2.png" alt="Avatar"><a href="#">Rahul Vlogs</a></li>
+                                <li class="flex items-center gap-[1vw] px-[1.2vw] py-[0.5vw]"><img class="w-[1.3vw] rounded-[5vw] cursor-pointer" src="./navigation assets/User-Avatar3.png" alt="Avatar"><a href="#">Akash Yadav</a></li>
+                                <li class="flex items-center gap-[1vw] px-[1.2vw] py-[0.5vw]"><img class="w-[1.3vw] rounded-[5vw] cursor-pointer" src="./navigation assets/User-Avatar4.png" alt="Avatar"><a href="#">Dr.angle</a></li>
+                                <li class="flex items-center gap-[1vw] px-[1.2vw] py-[0.5vw]"><img class="w-[1.3vw] rounded-[5vw] cursor-pointer" src="./navigation assets/User-Avatar5.png" alt="Avatar"><a href="#">Fire Driver</a></li>
+                                <li class="flex items-center gap-[1vw] px-[1.2vw] py-[0.5vw]"><img class="w-[1.3vw] rounded-[5vw] cursor-pointer" src="./navigation assets/User-Avatar6.png" alt="Avatar"><a href="#">Music World</a></li>
+                                <li class="flex items-center gap-[1vw] px-[1.2vw] py-[0.5vw]"><img class="w-[1.3vw] rounded-[5vw] cursor-pointer" src="./navigation assets/User-Avatar7.png" alt="Avatar"><a href="#">Coder Life</a></li>
+                                <li class="flex items-center gap-[1vw] px-[1vw] py-[0.5vw] pb-[1vw] cursor-pointer"><img class="w-[1.3vw] rounded-[5vw] cursor-pointer"      src="./navigation assets/Icon.png" alt="arrow"><a href="#">Show More</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </nav>
+                <div class="">
+                    <ul class="flex gap-[1.5vw] p-[1vw] w-[88vw] text-[0.8vw] font-bold items-center">
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">All</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                        <li class=" git py-[0.2vw] px-[1vw] rounded-[0.5vw] bg-[#212121]"><a href="#">item</a></li>
+                    </ul>
+                    <div class="w-full h-[80vh] overflow-auto scrollbar" id="main">
+                        <div class="grid grid-cols-5 mx-[1vw] " >
+
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[16vw] m-[1vw]">
+                                <img class="w-full rounded-[0.5vw]" src="./main asstes/Thumbnail.webp" alt="Thumbnail">
+                                <div class="w-full flex gap-[1vw] py-[0.5vw]">
+                                    <div class="">
+                                        <img class="w-[2vw] rounded-[2vw]" src="./navigation assets/User-Avatar.png" alt="">
+                                    </div>
+                                    <div class="w-full">
+                                        <h3 class="text-[0.8vw] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, nostrum?</h3>
+                                        <p class="text-[#8b8b8b]">Hello Gamer</p>
+                                        <span class="text-[#8b8b8b]">15K Views.</span>
+                                        <span class="text-[#8b8b8b]"> 1 week ago</span>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </header>
+    </main>
+</body>
+</html>
